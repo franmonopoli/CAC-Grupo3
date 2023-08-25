@@ -1,11 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop</title>
-</head>
-<body>
-    <a href="../home.html">Home</a>
-</body>
+  </head>
+  <body>
+    <header style="background-color: black">
+      <a href="../home.html" id="home"
+        ><img
+          src="../multimedia/branding/logo_light_horizontal.svg"
+          alt="Imagen de Funko"
+          style="margin-right: 1px"
+      /></a>
+      <a href="/html/shop.html" id="shop">Shop</a>
+      <a href="/html/contacto.html" id="contacto">Contacto</a>
+      <a href="/html/login.html" id="login">Login</a>
+      <a href="./html/carrito.html" id="carrito"
+        ><img src="../multimedia/icons/cart-icon.svg" alt="Imagen de carrito"
+      /></a>
+    </header>
+
+    <main>
+      <a href="../home.html">Home</a>
+      <aside id="aside-shop">
+        <div>
+          <h2>BUSCAR</h2>
+          <label for=""></label>
+          <input type="text" name="" id="" placeholder="Item o categoria" />
+        </div>
+        <div>
+          <h2>ORDENAR POR</h2>
+          <label for=""></label>
+          <select name="" id="">
+            <option value="">Mayor o menor...</option>
+            <option value="">x1</option>
+            <option value="">x2</option>
+            <option value="">x3</option>
+            <option value="">x4</option>
+          </select>
+        </div>
+        <div>
+          <h2>PRECIO</h2>
+          <label for="min">MIN</label>
+          <input type="number" name="" id="min" min="0" max="8900" />
+          -
+          <label for="max">MAX</label>
+          <input type="number" name="" id="max" min="0" max="8900" />
+        </div>
+        <div>
+          <h2>FILTRAR</h2>
+          <input type="radio" name="" id="nuevo" />
+          <label for="nuevo">NUEVO</label>
+
+          <input type="radio" name="" id="oferta" />
+          <label for="oferta">OFERTA</label>
+
+          <input type="radio" name="" id="edicion-especial" />
+          <label for="edicion-especial">EDICION ESPECIAL</label>
+
+          <input type="radio" name="" id="favoritos" />
+          <label for="favoritos">FAVORITOS</label>
+        </div>
+      </aside>
+
+      <section style="display: flex">
+        <!-- El flex esta para verlo mejor despues se arregla -->
+        <!-- aca no se si poner 3 sections o un section y 3 divs -->
+
+        <div>
+          <ul>
+            <li>
+              <article>
+                <a href="./item.html"
+                  ><img src="../multimedia/star-wars/trooper-1.webp" alt="" />
+                </a>
+                <div>
+                  <p>Star wars</p>
+                  <h3>STORMTROOPER</h3>
+                  <p>$1799,99</p>
+                  <p>3 Cuotas sin interes</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <article>
+                <a href="./item.html"
+                  ><img src="../multimedia//pokemon/pidgeotto-1.webp" alt="" />
+                </a>
+                <div>
+                  <p>Pokemon</p>
+                  <h3>PIDGEOTTO</h3>
+                  <p>$1799,99</p>
+                  <p>3 Cuotas sin interes</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <article>
+                <a href="./item.html"
+                  ><img src="../multimedia/harry-potter/luna-1.webp" alt="" />
+                </a>
+                <div>
+                  <p>Harry Potter</p>
+                  <h3>Luna</h3>
+                  <p>$1799,99</p>
+                  <p>3 Cuotas sin interes</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <article>
+                <a href="./item.html"
+                  ><img src="../multimedia/star-wars/trooper-1.webp" alt="" />
+                </a>
+                <div>
+                  <p>Star wars</p>
+                  <h3>STORMTROOPER</h3>
+                  <p>$1799,99</p>
+                  <p>3 Cuotas sin interes</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <article>
+                <a href="./item.html"
+                  ><img src="../multimedia//pokemon/pidgeotto-1.webp" alt="" />
+                </a>
+                <div>
+                  <p>Pokemon</p>
+                  <h3>PIDGEOTTO</h3>
+                  <p>$1799,99</p>
+                  <p>3 Cuotas sin interes</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <article>
+                <a href="./item.html"
+                  ><img src="../multimedia/harry-potter/luna-1.webp" alt="" />
+                </a>
+                <div>
+                  <p>Harry Potter</p>
+                  <h3>Luna</h3>
+                  <p>$1799,99</p>
+                  <p>3 Cuotas sin interes</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <article>
+                <a href="./item.html"
+                  ><img src="../multimedia/star-wars/trooper-1.webp" alt="" />
+                </a>
+                <div>
+                  <p>Star wars</p>
+                  <h3>STORMTROOPER</h3>
+                  <p>$1799,99</p>
+                  <p>3 Cuotas sin interes</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <article>
+                <a href="./item.html"
+                  ><img src="../multimedia//pokemon/pidgeotto-1.webp" alt="" />
+                </a>
+                <div>
+                  <p>Pokemon</p>
+                  <h3>PIDGEOTTO</h3>
+                  <p>$1799,99</p>
+                  <p>3 Cuotas sin interes</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <article>
+                <a href="./item.html"
+                  ><img src="../multimedia/harry-potter/luna-1.webp" alt="" />
+                </a>
+                <div>
+                  <p>Harry Potter</p>
+                  <h3>Luna</h3>
+                  <p>$1799,99</p>
+                  <p>3 Cuotas sin interes</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section style="display: flex; justify-content: center">
+        <button><</button>
+        <button>1</button>
+        <button>2</button>
+        <button>...</button>
+        <button>9</button>
+        <button>10</button>
+        <button>></button>
+      </section>
+    </main>
+
+    <footer style="background-color: black">
+      <div>
+        <a href="/html/shop.html" id="shop">Shop</a>
+        <br />
+        <a href="./html/contacto.html" id="contacto">Contacto</a>
+        <br />
+        <a href="./html/login.html" id="login">Login</a>
+        <br />
+        <a href="./home.html" id="home"
+          ><img src="../multimedia/branding/isotype.svg" alt=""
+        /></a>
+      </div>
+
+      <p style="color: white">All rights registered 2023 - Funkoshop $ copy</p>
+    </footer>
+  </body>
 </html>
