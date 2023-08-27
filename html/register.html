@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register</title>
-</head>
-<body>
-    <a href="../home.html">Home</a>
-</body>
+  </head>
+  <body>
+    <header style="background-color: black">
+      <a href="../home.html" id="home"
+        ><img
+          src="../multimedia/branding/logo_light_horizontal.svg"
+          alt="Imagen de Funko"
+          style="margin-right: 1px"
+      /></a>
+      <a href="/html/shop.html" id="shop">Shop</a>
+      <a href="/html/contacto.html" id="contacto">Contacto</a>
+      <a href="/html/login.html" id="login">Login</a>
+      <a href="./html/carrito.html" id="carrito"
+        ><img src="../multimedia/icons/cart-icon.svg" alt="Imagen de carrito"
+      /></a>
+    </header>
+
+    <main>
+      <h1>CREA TU CUENTA</h1>
+      <br /><br />
+      <h2>Completa el formulario para ser parte del mundo de los Funkos</h2>
+      <br /><br />
+      <section>
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" /><br />
+
+          <label for="apellido">Apellido:</label>
+          <input type="text" id="apellido" name="apellido" /><br />
+
+          <label for="mail">Email:</label>
+          <input type="email" name="mail" id="mail" /><br />
+
+          <label for="contraseña">Contraseña:</label>
+          <input type="password" name="contraseña" id="contraseña" /><br />
+
+          <label for="contraseña">Repita contraseña:</label>
+          <input type="password" name="contraseña" id="contraseña" /><br />
+
+          <input type="submit" value="Registrar" />
+
+          <input type="checkbox" name="" id="algo1" value="" />
+          <label for="algo1">Acepto terminos y condiciones</label>
+        </form>
+      </section>
+    </main>
+
+    <footer style="background-color: black">
+      <div>
+        <a href="/html/shop.html" id="shop">Shop</a>
+        <br />
+        <a href="./html/contacto.html" id="contacto">Contacto</a>
+        <br />
+        <a href="./html/login.html" id="login">Login</a>
+        <br />
+        <a href="./home.html" id="home"
+          ><img src="../multimedia/branding/isotype.svg" alt=""
+        /></a>
+      </div>
+
+      <p style="color: white">All rights registered 2023 - Funkoshop $ copy</p>
+    </footer>
+  </body>
 </html>
