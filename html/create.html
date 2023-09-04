@@ -3,9 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create</title>
+    <title>Agregar Productos</title>
+    <!-- <link rel="stylesheet" href="../css/estiloscreate.css"> -->
 </head>
+<header style="background-color: black">
+    <a href="../home.html" id="home"
+    ><img
+        src="../multimedia/branding/logo_light_horizontal.svg"
+        alt="Imagen de Funko"
+        style="margin-right: 1px"
+    /></a>
+    <a href="shop.html" id="shop">Shop</a>
+    <a href="contacto.html" id="contacto">Contacto</a>
+    <a href="login.html" id="login">Login</a>
+    <a href="carrito.html" id="carrito"
+    ><img src="../multimedia/icons/cart-icon.svg" alt="Imagen de carrito"
+    /></a>
+</header>
 <body>
-    <a href="../home.html">Home</a>
+    <div>
+        <h3>Agregar Personaje</h3>
+        <form>
+            
+            <label>Categoría:</label>
+            <input type="text"><br>
+            
+            <label>Licencia:</label>
+            <input type="text"><br>
+
+            <label>Nombre del Personaje:</label>
+            <input type="text"><br>
+
+            <label>Descrpiscion:</label>
+            <textarea placeholder="Ingrese la descripcion"></textarea>
+            <br>
+
+            <label>SKU:</label>
+            <input type="number"><br>
+
+            <label>Precio:</label>
+            <input type="number"><br>
+
+            <label>Stock:</label>
+            <input type="number"><br>
+
+            <label>Descuento:</label>
+            <input type="number"><br>
+
+            <label for="imagen">Imagenes:</label>
+            <input type="file" alt="Submit"><br>
+    
+            <button type="submit">Guardar Cambios</button>
+            <a href="./admin.html">Cancelar</a>
+        </form>
+        
+    </div>
+    <!-- 
+    <h3>Modificar Producto</h3>
+        <form>
+            <label>Nombre:</label>
+            <input type="text"><br>
+            <button type="submit">Modificar Producto</button> <a href="../home.html">Menu principal</a>
+        </form> -->
+    
 </body>
+<footer style="background-color: black;">
+    <div>
+    <a href="./html/shop.html" id="shop">Shop</a>
+    <br>
+    <a href="./html/register.html" id="register">Registrarse</a>
+    <br>
+    <a href="./html/login.html" id="login">Login</a>
+    <br>
+    <a href="./contacto.html" id="contacto">Contacto</a>
+    <br>
+    <a href="../home.html" id="home"><img src="../multimedia/branding/isotype.svg" alt=""></a>
+</div>
+
+    <p style="color: white;">All rights registered 2023 - Funkoshop $ copy</p>
+</footer>
 </html>
