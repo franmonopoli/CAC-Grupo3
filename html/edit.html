@@ -5,7 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit</title>
 </head>
+
+<header style="background-color: black;">
+    <a href="../home.html" id="home"><img src="../multimedia/branding/logo_light_horizontal.svg" alt="Imagen de Funko" style="margin-right: 1px"></a>
+    <a href="./shop.html" id="shop">Ver tienda</a>
+    <a href="./admin.html" id="admin">Admin</a>
+    <a href="" id="salir">Salir</a> <!-- Esto deberia desloguear despues pero no podemos hacerlo solo con html-->
+</header>
+
+
 <body>
-    <a href="../home.html">Home</a>
+    <main>
+        <h3>EDITAR ITEM</h3>
+        
+        <form>
+            
+            <label>Categoría:</label>
+            <input type="text"><br>
+            
+            <label>Licencia:</label>
+            <input type="text"><br>
+
+            <label>Nombre del Personaje:</label>
+            <input type="text"><br>
+
+            <label>Descripcion:</label>
+            <textarea placeholder="Ingrese la descripcion"></textarea>
+            <br>
+
+            <label>SKU:</label>
+            <input type="number"><br>
+
+            <label>Precio:</label>
+            <input type="number"><br>
+
+            <label>Stock:</label>
+            <input type="number"><br>
+
+            <label>Descuento:</label>
+            <input type="number"><br>
+
+            <!-- <label>Cuotas:</label> -->
+            <input type="number"><br>
+            <form action="#">
+                <label for="cuota">Cuotas</label>
+                <select name="cuotas" id="cuot">
+                <option value="cuota1">1 cuota</option>
+                <option value="cuota3">3 cuotas sin intereses</option>
+                <option value="cuota6">6 cuotas sin intereses</option>
+                <option value="cuota12">12 cuotas sin intereses</option>
+                </select>
+            </form>
+
+            <label for="imagen">Imagenes:</label>
+            <input type="file" alt="Submit"><br>
+
+            <button type="submit">Guardar Cambios</button>
+            <a href="./admin.html">Cancelar</a>
+        </form>
 </body>
+<footer style="background-color: black;">
+    <div>
+    <a href="./html/shop.html" id="shop">Shop</a>
+    <br>
+    <a href="./html/register.html" id="register">Registrarse</a>
+    <br>
+    <a href="./html/login.html" id="login">Login</a>
+    <br>
+    <a href="./contacto.html" id="contacto">Contacto</a>
+    <br>
+    <a href="../home.html" id="home"><img src="../multimedia/branding/isotype.svg" alt=""></a>
+</div>
+
+    <p style="color: white;">All rights registered 2023 - Funkoshop $ copy</p>
+</footer>
 </html>
