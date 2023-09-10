@@ -3,21 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit</title>
+    <!-- <link rel="stylesheet" href="../css/estiloscreate.css"> -->
 </head>
-
-<header style="background-color: black;">
-    <a href="../home.html" id="home"><img src="../multimedia/branding/logo_light_horizontal.svg" alt="Imagen de Funko" style="margin-right: 1px"></a>
-    <a href="./shop.html" id="shop">Ver tienda</a>
-    <a href="./admin.html" id="admin">Admin</a>
-    <a href="" id="salir">Salir</a> <!-- Esto deberia desloguear despues pero no podemos hacerlo solo con html-->
-</header>
-
-
-<body>
+   
+</body>
+<header style="background-color:black">
+	<nav>
+		<picture>
+			<a href="./cartel.html">
+				<img src="./img/multimedia/branding/logo_light_horizontal.svg" 
+				 alt="Imagen de Funko"
+                 style="margin-right: 1px">
+				</img>
+			</a>
+		</picture>
+	<lu>
+		<li>
+			<a href="./page/shop.html">SHOP</a>
+		</li>
+		<li> <a href="./page/contacto.html">CONTACTO</a></li>
+		<li><a href="./page/login.html">LOGIN</a></li>
+		<li><a href="">CARRITO</a><img src="../multimedia/icons/cart-icon.svg" alt="Imagen de carrito"/></li>
+	</lu>
+	</nav>
+	</header>
     <main>
         <h3>EDITAR ITEM</h3>
-        
+         
         <form>
             
             <label>Categoría:</label>
@@ -45,25 +57,34 @@
             <label>Descuento:</label>
             <input type="number"><br>
 
-            <!-- <label>Cuotas:</label> -->
+            <label>Cuotas:</label>
             <input type="number"><br>
             <form action="#">
                 <label for="cuota">Cuotas</label>
                 <select name="cuotas" id="cuot">
-                <option value="cuota1">1 cuota</option>
-                <option value="cuota3">3 cuotas sin intereses</option>
-                <option value="cuota6">6 cuotas sin intereses</option>
-                <option value="cuota12">12 cuotas sin intereses</option>
-                </select>
-            </form>
+                  <option value="cuota1">1 cuota</option>
+                  <option value="cuota3">3 cuotas sin intereses</option>
+                  <option value="cuota6">6 cuotas sin intereses</option>
+                  <option value="cuota12">12 cuotas sin intereses</option>
+                 </select>
+               </form>
 
             <label for="imagen">Imagenes:</label>
             <input type="file" alt="Submit"><br>
-
+    
             <button type="submit">Guardar Cambios</button>
             <a href="./admin.html">Cancelar</a>
         </form>
-</body>
+        
+    </div>
+    <!-- 
+    <h3>Modificar Producto</h3>
+        <form>
+            <label>Nombre:</label>
+            <input type="text"><br>
+            <button type="submit">Modificar Producto</button> <a href="../home.html">Menu principal</a>
+        </form> -->
+   </main> 
 <footer style="background-color: black;">
     <div>
     <a href="./html/shop.html" id="shop">Shop</a>
@@ -79,4 +100,5 @@
 
     <p style="color: white;">All rights registered 2023 - Funkoshop $ copy</p>
 </footer>
+</body>
 </html>
