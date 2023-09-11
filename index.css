@@ -1,0 +1,24 @@
+
+
+
+
+/**HEADER**/
+header{
+ background-color: --dark_bg;   
+}
+
+
+navbar{
+
+}
+
+header, footer 
+{font-family: 'Lucida Sans';
+color: blue}
+
+ul,ol {list-style-type: none}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto
+}
