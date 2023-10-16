@@ -47,10 +47,14 @@
 --spacing-16:1.6rem;
 --spacing-12:1.2rem;
 --spacing-8:0.8rem;
+--spacing-4:0.4rem;
+}
+
+body{
+    margin: 0;
 }
 .banner{
     font-family: var(--base-font, --alternative-font);
-    border: 1px solid black;
     width: 100 vw;
     margin: 0;
     padding: var(--spacing-28);
@@ -59,18 +63,17 @@
     background-repeat: round space;
     opacity: 0.85;
 }
-.banner h1{
-    padding-bottom: 0;
-}
+
 
 .div-banner{
     margin: 0;
-    padding-bottom: 0;
-   opacity: 1;
+    padding: 0;
+    opacity: 1;
 }
 .shopButton{
+    padding: var(--spacing-4);
     background-color: white;
-    color: var(--dark-bg-solid);
+    color: var(--dark-900);
     text-align: center;
     margin: 1px;
     border-radius: 12px;
@@ -78,8 +81,47 @@
     width: 15%;
 }
 
-.shopButton *{
-    text-decoration: none;
-    color: --dar;
+.itemlist{
+    font-family: var(--base-font, --alternative-font);
+    background-color: var(--light-bg-solid);
+}
 
+.itemlist img{
+    max-height: 250px;
+
+}
+
+.container{
+    padding: var(--spacing-16);
+    display: flex;
+    align-content: space-between;
+}
+
+
+.odd{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--base-font, --alternative-font);
+    font-size: 1.5vw;
+    padding: var(--spacing-4);
+
+}
+
+
+
+#ver-coleccion{
+    width: 50%;
+    padding: var(--spacing-4);
+    background-color: var(--dark-bg-solid);
+    color: var(--light-bg-solid);
+    text-align: center;
+    margin: 1px;
+    border-radius: 12px;
+    font-size: auto;
+
+}
+.redline{
+    width: 50%;
+    border-bottom: 1px solid red;
+    margin-bottom: 10px;
 }

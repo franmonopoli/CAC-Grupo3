@@ -29,25 +29,29 @@
       <div class="div-banner">
         <h1>Nuevos Ingresos</h1>
         <p>Descubri el proximo Funko Pop de tu coleccion</p>
-        <button class="shopButton"><a href="./html/shop.html">SHOP</a></button>
+        <button id="shopButton" class="shopButton">SHOP</button>
       </div>  
     </section>
 
-    <section id="itemlist">
-      <div id="itemlist">
-        <div id="mandalorian">
+    <section class="itemlist">
+      <div id="mandalorian" class="odd"></div>
+      <div class="container">
+        <div class="container-left">
           <h3>STAR WARS & THE MANDALORIAN</h3>
           <p>Disfruta de una saga...</p>
+          <div class="redline"></div>
+          <button id="ver-coleccion">VER COLLECCION</button>
+        </div>
+
+        <div class="container-right">
           <img
             src="./multimedia/star-wars/baby-yoda-1.webp"
             alt="Imagen de baby yoda"
-            style="height: 50px; width: 50px"
           />
-          <br />
-          <a href="">VER COLLECCION</a>
         </div>
+      </div>
 
-        <div id="pokemon">
+        <div id="pokemon" class="pair">
           <h3>POKEMON INDIGO</h3>
           <p>Atrapa todos los que puedas...</p>
           <img
@@ -59,7 +63,7 @@
           <a href="">VER COLLECCION</a>
         </div>
 
-        <div id="harryPotter">
+        <div id="harryPotter" class="odd">
           <h3>HARRY POTTER</h3>
           <p>Revive los recuerdos...</p>
           <img
@@ -130,5 +134,9 @@
 
       <p style="color: white">All rights registered 2023 - Funkoshop $ copy</p>
     </footer>
+
+
+    <!-- linked scripts -->
+    <script src="./js/script.js"></script>
   </body>
 </html>
