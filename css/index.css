@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Ralewway:wght@300;400;500;600;700&display=swap');
 
+/**/
 :root{
 /*palletes*/
 --primary-solid: #FF3333;
@@ -51,6 +52,7 @@
 }
 
 body{
+    background-color: var(--light-bg-solid);
     margin: 0;
 }
 .banner{
@@ -70,41 +72,41 @@ body{
     padding: 0;
     opacity: 1;
 }
+
 .shopButton{
+    font-family: var(--base-font);
+    font-weight:bolder;
     padding: var(--spacing-4);
     background-color: white;
-    color: var(--dark-900);
+    color: black;
     text-align: center;
     margin: 1px;
+    border: 0px;
     border-radius: 12px;
     height: 15%;
     width: 15%;
 }
 
 .itemlist{
-    font-family: var(--base-font, --alternative-font);
-    background-color: var(--light-bg-solid);
-}
 
-.itemlist img{
-    max-height: 250px;
+    font-family: var(--base-font, --alternative-font);
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vw;
+    margin-right: 5vw;
 
 }
 
 .container{
-    padding: var(--spacing-16);
-    display: flex;
-    align-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    
 }
 
-
-.odd{
-    display: flex;
-    flex-direction: column;
-    font-family: var(--base-font, --alternative-font);
-    font-size: 1.5vw;
-    padding: var(--spacing-4);
-
+.pair{
+    align-self: center;
+    order: -1;
 }
 
 
@@ -120,8 +122,18 @@ body{
     font-size: auto;
 
 }
+
+.container img{
+    max-width: 40vw;
+}
+.container p{
+    font-size: var(--font-xsmall);
+}
+.funko-title{
+    font-size: var(--font-large);
+}
 .redline{
-    width: 50%;
+
     border-bottom: 1px solid red;
     margin-bottom: 10px;
 }
