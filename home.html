@@ -96,44 +96,67 @@
 
     </main>
 
-    <section id="ultimosLanzamientos">
-      <div id="ultimosLanzamientos" style="margin-right: 0">
-        <h1>ULTIMOS LANZAMIENTOS</h1>
+    <section id="ultimosLanzamientos" class= "slider">
+        <h2 class="slider-title">ULTIMOS LANZAMIENTOS</h2>
 
-        <div id="stormtropper" style="border: 1px solid black; width: 25%">
-          <img
-            src="./multimedia/star-wars/trooper-1.webp"
-            alt="Imagen de stormtropper"
-            style="height: 50px; width: 50px"
-          />
-          <p>star wars</p>
-          <h4>STORMTROOPER</h4>
-          <p>$ precio</p>
-          <p>3 Cuotas sin interes</p>
-        </div>
-        <div id="pidgeotto" style="border: 1px solid black; width: 25%">
-          <img
-            src="./multimedia/pokemon/pidgeotto-1.webp"
-            alt="Imagen de pidgeot"
-            style="height: 50px; width: 50px"
-          />
-          <p>pokemon</p>
-          <h4>PIDGEOTTO</h4>
-          <p>$ PRECIO</p>
-          <p>3 Cuotas sin interes</p>
-        </div>
-        <div id="lunaLovegood" style="border: 1px solid black; width: 25%">
-          <img
-            src="./multimedia/harry-potter/luna-1.webp"
-            alt="Imagen de Luna"
-            style="height: 50px; width: 50px"
-          />
-          <p>harry potter</p>
-          <h4>LUNA LOVEGOOD LION MASK</h4>
-          <p>$ PRECIO</p>
-          <p>3 Cuotas sin interes</p>
-        </div>
-      </div>
+        <ul class="card-items-list slider-list">
+          <li>
+            <article class="card-item slider-item">
+                 <!-- <a href="" class="card-item-link">Deberia linkear al item.html -->
+                  <picture class="card-item-img">
+                    <img
+                    src="./multimedia/star-wars/trooper-1.webp" alt="Imagen de stormtropper" class="card-item-image"/>
+                    <img src="./multimedia/star-wars/trooper-box.webp" alt="Imagen de stormtropper caja" class="card-item-box">
+                  </picture>
+
+                  <div class="card-data">
+                    <p class="card-data-licence">star wars</p>
+                    <h4 class="card-data-name">STORMTROOPER</h4>
+                    <p class="card-data-price">$ 1799.99</p>
+                    <p class="card-data-promo">3 Cuotas sin interes</p>
+                  </div>
+                </a>
+              </article>
+          </li>  
+
+          <li>
+            <article class="card-item slider-item">
+            <!-- <a href="" class="card-item-link">Deberia linkear al item.html -->
+             <picture class="card-item-img">
+               <img
+               src="./multimedia/pokemon/pidgeotto-1.webp" alt="Imagen de pidgeotto" class="card-item-image"/>
+               <img src="multimedia/pokemon/pidgeotto-box.webp" alt="Imagen de pidgeotto caja" class="card-item-box">
+             </picture>
+
+             <div class="card-data">
+               <p class="card-data-licence">pokemon</p>
+               <h4 class="card-data-name">PIDGEOTTTO</h4>
+               <p class="card-data-price">$ 1799.99</p>
+               <p class="card-data-promo">3 Cuotas sin interes</p>
+             </div>
+           </a>
+         </article>
+        </li>
+
+        <li>
+          <article class="card-item slider-item">
+            <!-- <a href="" class="card-item-link">Deberia linkear al item.html -->
+             <picture class="card-item-img">
+               <img
+               src="./multimedia/harry-potter/luna-1.webp" alt="Imagen de Luna Lovegood" class="card-item-image"/>
+               <img src="multimedia/harry-potter/luna-box.webp" alt="Imagen de Luna Lovegood caja" class="card-item-box">
+             </picture>
+
+             <div class="card-data">
+               <p class="card-data-licence">harry potter</p>
+               <h4 class="card-data-name">LUNA LOVEGOOD</h4>
+               <p class="card-data-price">$ 1799.99</p>
+               <p class="card-data-promo">3 Cuotas sin interes</p>
+             </div>
+           </a>
+         </article>
+      </li>
+    </ul>
     </section>
 
     <footer style="background-color: black">

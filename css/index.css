@@ -55,6 +55,11 @@ body{
     background-color: var(--light-bg-solid);
     margin: 0;
 }
+
+body 
+::before{
+    text-decoration: none;
+}
 .banner{
     font-family: var(--base-font, --alternative-font);
     width: 100 vw;
@@ -137,3 +142,90 @@ body{
     border-bottom: 1px solid red;
     margin-bottom: 10px;
 }
+
+
+.slider{
+    font-family: var(--base-font);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-20);
+}
+
+.slider-title{
+    font-family: var(--alternative-font);
+    font-size: var(--font-xlarge);
+    text-transform: uppercase;
+}
+
+.slider-list{
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: var(--spacing-24);
+
+}
+
+.card-data{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    padding: var(--spacing-16);
+}
+
+.card-data *{
+    margin: 0;
+}
+
+.card-item-img{
+    display: flex;
+}
+.card-item-img img{
+    animation: fade 1s;
+    width: 15em;
+}
+
+/* Transition image to box */
+
+@keyframes fade{
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.card-item-box{
+    display: none;
+}
+
+.card-item-img:hover .card-item-image{
+    display: none;
+}
+
+.card-item-img:hover .card-item-box{
+    display: block;
+}
+
+.card-data-licence{
+    text-transform: uppercase;
+    font-size: var(--font-small);
+    font-weight: 500;
+}
+
+.card-data-name{
+    font-size: var(--font-medium);
+    font-weight: 700;
+}
+
+.card-data-price{
+    font-size: var(--font-small);
+}
+
+.card-data-promo{
+    color: #1D84B5;
+    font-size: var(--font-small);
+}
+
