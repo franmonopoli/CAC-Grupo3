@@ -68,6 +68,7 @@ body
     color: white;
     background-image: url('../multimedia/funkos-banner.webp');
     background-repeat: round space;
+    background-size: cover;
     opacity: 0.85;
 }
 
@@ -152,6 +153,7 @@ body
 }
 
 .slider-title{
+    padding-left: var(--spacing-24);
     font-family: var(--alternative-font);
     font-size: var(--font-xlarge);
     text-transform: uppercase;
@@ -229,3 +231,43 @@ body
     font-size: var(--font-small);
 }
 
+/* FOOTER */
+
+footer{
+    padding: var(--spacing-24) var(--spacing-68) var(--spacing-4);
+    background-color: var(--dark-bg-solid);
+    display: flex;
+    flex-direction: column;
+    justify-items: stretch;
+}
+
+.footerSeparator{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.footerLinks{
+    flex-wrap: wrap;
+    font-family: var(--base-font, --alternative-font);
+    color: var(--light-font-solid);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.footerLinks a{
+    text-decoration: none;
+    color: var(--light-font-solid);
+    font-size: var(--font-xsmall);
+    
+}
+
+.footerHome{
+    justify-self: end;
+}
+.footerRightsReserved{
+    justify-content: flex-end;
+    align-self: center;
+    color: white;
+}
