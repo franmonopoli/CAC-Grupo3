@@ -38,53 +38,58 @@
 	</header>
 	<main class="container">
 		<section>
-				
-				<div class="container">
-					<H2>CARRITO</H2>
-					<!-- Elementos del carrito -->
-					<table table border="1">
-					<tbody>
-						<thead>
-							<TD>DETALLE PRODUCTO</TD>
-							<TD>CANTIDAD</TD>
-							<TD>PRECIO</TD>
-						</thead>
-						<tr>
-							<TD> 
-								<section>
-								<picture>
-							     	<img src="../multimedia/star-wars/baby-yoda-1.webp" 
+		<DIV><H2>CARRITO DE COMPRAS</H2></DIV>	
+		<div class="carrito__titulos">	
+			<div>	
+				<H2>DESCRIPCION</H2>
+			<div>
+				<H2>CANTIDAD</H2>	
+			</div>
+			<div ><H2>PRECIO</H2></div>	
+		</div>	
+		<div class="container__carrito">
+						<div class="carrito__linea">	
+			
+				<div class="carrito__item_info">
+				<div CLASS="item_imagen">
+					<picture>
+							    <img src="../multimedia/star-wars/baby-yoda-1.webp" 
 									alt= "star-wars baby-yoda-1">
-							        </img> 
-								</picture> 
-								<article>
-									<p>star-wars baby-yoda-1</p>               
-									</article>
-								</section>
-							</TD>
-							<TD>1</TD>
-							<TD>15000</TD>
-						</tr>
-						<tr>
-							<TD> 
-								<picture>
-							     	<img src="../multimedia/star-wars/bobbafeth-box.webp" 
-									alt= "star-wars baby-yoda-1">
-							        </img> 
-									<p>star-wars baby-yoda-1</p>               
-									</picture> 
-							</TD>
-							<TD>2</TD>
-							<TD>17500</TD>
-						</tr>
-					</tbody>
+							    </img> 
+					</picture> 
 				</div>
-			</article>
+				<div CLASS="item_descripcion">
+					<p>star-wars baby-yoda-1</p> 	
+				</div>			
+				<div class="carrito__item_cantidad">
+					<p>1</p></div>
+				<div class="carrito__item_precio"><p>15000</p></div>
+								
+			</div>
+			
+			<div class="carrito__item_info">
+				<div CLASS="item_imagen">
+					<picture>
+							    <img src="../multimedia/star-wars/bobbafeth-box.webp" 
+									alt= "star-wars baby-yoda-1">
+							    </img> 
+					</picture> 
+				</div>
+				<div CLASS="item_descripcion">
+					<p>star-wars baby-yoda-1</p> 	
+				</div>			
+				<div class="carrito__item_cantidad">
+					<p>1</p></div>
+				<div class="carrito__item_precio"><p>15000</p></div>
+							
+</div>
 		</section>
 		<section>
-			<article>
+		<div class="container__resumen">
+			<div class="resumen-header">
+				<H2>RESUMEN</H2>	
+			</div>
 				
-				<H2>RESUMEN</H2>
 				<table table border="2">
 					<tbody><tr>
 						<TR>
@@ -107,8 +112,8 @@
 					</tfoot>		 
 				</table>
 				<button id="boton-pagar" class="btn btn-danger">Pagar</button>
-		</article>
-		</section>
+			</div>
+	    </section>
 	</main>
 	
 <footer class="footer">
