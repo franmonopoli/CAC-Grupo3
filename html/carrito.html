@@ -37,83 +37,113 @@
 	</nav>
 	</header>
 	<main class="container">
-		<section>
-		<DIV><H2>CARRITO DE COMPRAS</H2></DIV>	
-		<div class="carrito__titulos">	
-			<div>	
-				<H2>DESCRIPCION</H2>
-			<div>
-				<H2>CANTIDAD</H2>	
-			</div>
-			<div ><H2>PRECIO</H2></div>	
-		</div>	
-		<div class="container__carrito">
-						<div class="carrito__linea">	
-			
-				<div class="carrito__item_info">
-				<div CLASS="item_imagen">
-					<picture>
-							    <img src="../multimedia/star-wars/baby-yoda-1.webp" 
-									alt= "star-wars baby-yoda-1">
-							    </img> 
-					</picture> 
+		<div class="grid_contaner_carrito">
+			<div class="carrito_encabezado_carrito">
+				<div class="carrito_titulo_encabezado">
+					<p class=p_encabezado>CARRITO DE COMPRAS</p>
 				</div>
-				<div CLASS="item_descripcion">
-					<p>star-wars baby-yoda-1</p> 	
-				</div>			
-				<div class="carrito__item_cantidad">
-					<p>1</p></div>
-				<div class="carrito__item_precio"><p>15000</p></div>
-								
-			</div>
 			
-			<div class="carrito__item_info">
-				<div CLASS="item_imagen">
-					<picture>
-							    <img src="../multimedia/star-wars/bobbafeth-box.webp" 
-									alt= "star-wars baby-yoda-1">
-							    </img> 
-					</picture> 
-				</div>
-				<div CLASS="item_descripcion">
-					<p>star-wars baby-yoda-1</p> 	
-				</div>			
-				<div class="carrito__item_cantidad">
-					<p>1</p></div>
-				<div class="carrito__item_precio"><p>15000</p></div>
-							
-</div>
-		</section>
-		<section>
-		<div class="container__resumen">
-			<div class="resumen-header">
-				<H2>RESUMEN</H2>	
 			</div>
+            <div class="carrito_titulos_carrito">
+				<div class ="carrito_titulo_encabezado">
+					<div><H2>DESCRIPCION</H2></div>
+					<div><H2>CANTIDAD</H2></div>
+					<div><H2>PRECIO</H2></div>	
+				</div>
+			</div>
+			<div class="carrito_item_carrito">
+				<div class="cart__item">	
+			
+					<div class="cart__item_frame111">
+						<div CLASS="cart__item_imagen">
+						<picture>
+									<img src="../multimedia/star-wars/baby-yoda-1.webp" 
+										alt= "star-wars baby-yoda-1">
+									</img> 
+						</picture> 
+						</div>
+						<div class="class=cart__item_frame123">
+							<div class="cart__item_frame122">
+								<div CLASS="cart__item_frame122_titulo">
+									<p>baby-yoda-1</p> 	
+								</div>
+								<div CLASS="cart__item_frame122_titulo2">
+									<p>STARS WARS</p> 	
+								</div>
+							</div>
+						</div>			
+					</div>
+					<div class="cart__item_frame117_cantidad">
+						<p>1</p>
+					</div>
+					<div class="cart__item_precio">
+						<p>1000</p>
+					</div>
+				</div>
+			</div>
+			<div class="carrito__resumen_encabezado">
+				<div>
+					<p class="p_encabezado">RESUMEN</p>	
+				</div>	
+			</div>
+			<div class="carrito__resumen">
+				<div class="carrito__resumen__grid">
+					<div class="carrito__resumen__cantidad_elementos">
+						<div class="carrito__resumen__contenedor">
+							<div class="carrito__resumen_titulo">
+								<p class="p_resumen_col1">Cantidad Elemento</p>
+						   	</div>
+						<div class="carrito__resumen_valor">
+							<p>1</p>
+						</div>	
+					</div>	
+					<div class="carrito__resumen__subtotal">	
+						<div class="carrito__resumen__contenedor">
+							<div class="carrito__resumen_titulo">
+								<p class="p_resumen_col1">Subtotal</p>
+							</div>
+							<div class="carrito__resumen_valor">
+									<p>10000</p>
+							</div>		
+						</div>
+				  	</div>
+				  <div class="carrito__resumen__envio">	
+						<div class="carrito__resumen__contenedor">
+							<div class="carrito__resumen__titulo">
+								<p class="p_resumen_col1">Envio</p>
+							</div>
+							<div class="carrito__resumen_valor">
+									<p>0</p>
+							</div>		
+						</div>		
+					</div>
+					<div class="carrito__resumen__linea">	
+						<div class="carrito__resumen__contenedor">
+							<div class="carrito__resumen__titulo">
+								<Tclass="p_resumen_col1">----------------------------------------------------</p>
+							</div>
+						
+						</div>		
+					</div>
+					<div class="carrito__resumen__total">	
+						<div class="carrito__resumen__contenedor">
+							<div class="carrito__resumen__titulo">
+							<p class="p_resumen_col1">Total</p>
+							</div>
+							<div class="carrito__resumen_valor">
+								<p>10000</p>
+							</div>
+						</div>			
+					</div>
+				</div>		
+			    <div class="carrito__resumen_boton">
+					<button type="button" class="btn btn-primary btn-sm d-block d-sm-none d-sm-block d-md-none" id="submit">IR A PAGAR</button>
+					</div>
 				
-				<table table border="2">
-					<tbody><tr>
-						<TR>
-							<TD>CANTIDAD DE ELEMENTOS</TD>
-							<TD>3</TD>
-						</tr>
-						<tr>
-							<TD>SUBTOTAL</TD>
-							<TD>50000</TD>
-						</tr>
-						<tr>
-							<TD>ENVIO</TD>
-							<TD>0</TD>
-						</tr>
-					</tbody>
-					<tfoot><tr>
-						<TD>MONTO</TD>
-						<td>50000</tD>
-						</tr>
-					</tfoot>		 
-				</table>
-				<button id="boton-pagar" class="btn btn-danger">Pagar</button>
 			</div>
-	    </section>
+		</div>
+    
+		
 	</main>
 	
 <footer class="footer">
